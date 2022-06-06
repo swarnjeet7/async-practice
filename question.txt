@@ -1,0 +1,33 @@
+/**
+ * create the pipe function
+ * The concept of pipe is simple — it combines n functions.
+ * It’s a pipe flowing left-to-right, calling each function
+ * with the output of the last one.
+ * 
+ * getName accepts an object as argument and returns name from the object
+ * 
+ * uppercase accepts string as argument and return uppercase converted string
+ * 
+ * get6Characters accepts string as argument and return first six characters
+ * 
+ * reverse accepts string as argument and return the reversed string
+ * 
+ * use reduce to achieve this
+ * 
+ * example: 
+ * 
+ * 
+ pipe(
+  getName,
+  uppercase,
+  get6Characters,
+  reverse
+)({ name: 'Buckethead' })
+
+example 2
+ * pipe(
+  get6Characters,
+  uppercase,
+  reverse
+)('Buckethead')
+ */
